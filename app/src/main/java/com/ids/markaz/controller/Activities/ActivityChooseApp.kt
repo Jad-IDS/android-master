@@ -24,8 +24,8 @@ class ActivityChooseApp : ActivityBase() {
 
     private fun init(){
          selectedApp=AppConstants.MARKAZ
-        linearMarkazRobot.setOnClickListener{next()}
-        linearMarkazWealth.setOnClickListener{next()}
+         linearMarkazRobot.setOnClickListener{next()}
+         linearMarkazWealth.setOnClickListener{next()}
 
 
 
@@ -48,6 +48,9 @@ class ActivityChooseApp : ActivityBase() {
 
 
         }
+    }
+    private fun test(){
+
     }
 
 

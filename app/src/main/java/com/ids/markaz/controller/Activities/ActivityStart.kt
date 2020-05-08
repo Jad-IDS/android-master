@@ -28,11 +28,18 @@ class ActivityStart : ActivityBase(),RVOnItemClickListener {
 
 
     private fun init(){
-         setAds()
+         setStartPager()
+        tvLetsStart.setOnClickListener(){next()}
       }
 
 
-    private fun setAds(){
+
+    private fun next(){
+
+        startActivity(Intent(this, ActivityLogin::class.java))
+
+    }
+    private fun setStartPager(){
         adapter = AdapterStartPager(this, arrayListOf(),this)
         vpStart.adapter = adapter
         tlImage.setupWithViewPager(vpStart)

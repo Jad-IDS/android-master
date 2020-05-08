@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#47B7F5</color>
+    <color name="colorPrimary">#199fd9</color>
 <!--    #47b7f5&lt;!&ndash;&ndash;&gt;-->
-    <color name="colorPrimaryDark">#47B7F5</color>
-    <color name="colorAccent">#47B7F5</color>
+    <color name="colorPrimaryDark">#199fd9</color>
+    <color name="colorAccent">#199fd9</color>
 
     <color name="primary">#00599B</color>
-    <color name="secondary">#47B7F5</color>
-    <color name="blue1">#3FADEC</color>
+    <color name="secondary">#199fd9</color>
+    <color name="blue1">#199fd9</color>
+    <color name="footer">#65a8df</color>
 
     <color name="blue_lite">#d8e9f7</color>
 
@@ -45,5 +46,9 @@
 
     <color name="gray_medium">#efefef </color>
 
+    <color name="tab_unselected">#3e99cb </color>
 
+
+    <color name="btn_skip_border">#3e99cb </color>
+    <color name="btn_skip_color">#076bac </color>
 </resources>

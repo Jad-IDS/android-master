@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@drawable/bg_start"
 
         android:orientation="vertical"
 >
@@ -14,21 +14,50 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="@dimen/big_margin"
+                android:background="@drawable/bg_start"
                 android:orientation="vertical">
             <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="60dp"
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="40dp"
-                    android:src="@drawable/logo"
+                    android:src="@drawable/logo_white"
                     />
+
+            <LinearLayout
+
+                    android:layout_marginTop="@dimen/big_margin"
+                    android:layout_marginBottom="@dimen/big_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+            <com.ids.markaz.custom.CustomTextViewMedium
+
+                    android:textSize="@dimen/big_font"
+                    android:textColor="@color/white"
+                    android:text="Login To Your Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:background="@drawable/background_rectangular_white"
+                    android:orientation="vertical"
+
+                    android:padding="@dimen/second_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
 
             <com.ids.markaz.custom.CustomTextViewMedium
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/small_font"
-                    android:layout_marginTop="@dimen/normal_margin"
+                    android:layout_marginTop="@dimen/second_margin"
                     android:text="username"
                     android:paddingStart="@dimen/mini_margin"
                     android:paddingLeft="@dimen/mini_margin"
@@ -37,13 +66,21 @@
             <EditText
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/edit_text_height"
-                    android:background="@drawable/bg_recangular_border_gray"
+                    android:background="#00000000"
                     android:textSize="@dimen/font"
+                    android:hint="Enter"
                     android:paddingLeft="@dimen/normal_margin"
                     android:paddingRight="@dimen/normal_margin"
                     android:textColor="@color/primary"
                     android:id="@+id/etUsrname"
                     android:layout_marginTop="@dimen/normal_margin"/>
+
+
+
+                <LinearLayout
+                        android:background="#efefef"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></LinearLayout>
 
 
             <com.ids.markaz.custom.CustomTextViewMedium
@@ -56,34 +93,67 @@
                     android:paddingLeft="@dimen/mini_margin"
                     />
 
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
             <EditText
-                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
                     android:layout_height="@dimen/edit_text_height"
-                    android:background="@drawable/bg_recangular_border_gray"
                     android:textSize="@dimen/font"
+                    android:hint="Enter"
                     android:textColor="@color/primary"
                     android:paddingLeft="@dimen/normal_margin"
                     android:paddingRight="@dimen/normal_margin"
                     android:id="@+id/etPassword"
+                    android:background="#00000000"
                     android:inputType="textPassword"
                     android:layout_marginTop="@dimen/normal_margin"/>
+                    <!--android:background="@drawable/bg_recangular_border_gray"-->
 
-            <com.ids.markaz.custom.CustomTextViewMedium
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/primary"
-                    android:textSize="@dimen/small_font"
-                    android:text="Forgot password?"
-                    android:layout_gravity="end"
-                    android:gravity="end"
-                    android:layout_marginTop="@dimen/mini_margin"
-                    />
+
+
+                    <LinearLayout
+                            android:layout_marginLeft="@dimen/mini_margin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        <com.ids.markaz.custom.CustomTextViewMedium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/small_font"
+                                android:text="Forgot password?"
+                                android:layout_gravity="end"
+                                />
+
+
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:background="#efefef"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"></LinearLayout>
 
 
 
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:visibility="gone"
                     android:layout_marginTop="@dimen/big_margin"
                     android:layout_gravity="center"
                     android:id="@+id/btFingerPrint"
@@ -113,27 +183,58 @@
 
 
 
+                <LinearLayout
+                        android:layout_marginTop="@dimen/second_margin"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
 
             <LinearLayout
-                    android:layout_width="match_parent"
+
+
+                    android:background="@drawable/rounded_main"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:layout_marginTop="@dimen/big_margin"
                     android:id="@+id/btLogin"
-                    android:background="@drawable/bg_rectangular_border_primary"
                     >
 
                 <com.ids.markaz.custom.CustomTextViewBold
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/login"
-
-                        android:textColor="@color/primary"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
                         android:textSize="@dimen/font"
                         android:layout_gravity="center"
                         android:gravity="center"
                         />
+            </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/image_face_recogntion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+
+                        <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_face"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>

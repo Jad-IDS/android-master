@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bg_start"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <com.ids.markaz.custom.CustomTextViewMedium
@@ -14,7 +15,7 @@
         />
     <androidx.viewpager.widget.ViewPager
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="440dp"
             android:id="@+id/vpStart"
             />
 
@@ -23,14 +24,47 @@
             android:id="@+id/tlImage"
             android:layout_width="match_parent"
             android:layout_height="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="200dp"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_below="@id/vpStart"
+
             android:layout_centerHorizontal="true"
             app:tabBackground="@drawable/selector_tab_image"
             app:tabGravity="center"
+            app:tabPadding="4dp"
             app:tabIndicatorHeight="0dp"
-            app:tabMaxWidth="12dp"
+            app:tabMaxWidth="15dp"
             app:tabRippleColor="@null" />
+
+
+
+    <LinearLayout
+            android:layout_below="@id/tlImage"
+            android:layout_marginTop="@dimen/big_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+        <LinearLayout
+                android:layout_width="300dp"
+                android:background="@drawable/rounded_main"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <com.ids.markaz.custom.CustomTextViewLite
+                    android:id="@+id/tvLetsStart"
+                    android:textColor="@color/white"
+                    android:padding="5dp"
+                    android:textSize="@dimen/titles_font"
+                    android:text="Let's Start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    ></com.ids.markaz.custom.CustomTextViewLite>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
 
 
 </RelativeLayout>

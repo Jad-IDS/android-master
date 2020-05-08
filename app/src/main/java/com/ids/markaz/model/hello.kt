@@ -6,7 +6,7 @@ class hello{
 
     var hello2 : String ?= null
 
-    var hello3 : String ?=null 
+    var hello3 : String ?=null
 
 
 }

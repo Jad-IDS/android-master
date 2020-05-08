@@ -18,7 +18,7 @@
     <dimen name="big_radius">14dp</dimen>
     <dimen name="big_font">16sp</dimen>
     <dimen name="titles_font">26sp</dimen>
-    <dimen name="very_big_font">22sp</dimen>
+
     <dimen name="button_width">220dp</dimen>
     <dimen name="button_height">41dp</dimen>
     <dimen name="toolbar_margin">40dp</dimen>
@@ -45,5 +45,6 @@
     <dimen name="height_40">40dp</dimen>
     <dimen name="logo_start_width">300dp</dimen>
     <dimen name="block_width">220dp</dimen>
+    <dimen name="very_big_font">22sp</dimen>
 
 </resources>

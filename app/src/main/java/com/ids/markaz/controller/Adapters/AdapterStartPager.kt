@@ -26,15 +26,7 @@ internal class AdapterStartPager(private val context: Context, val arrayList: Ar
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
 
 
-        var view = layoutInflater.inflate(R.layout.fragment_start_1, container, false)
-
-        when (position) {
-            0 -> view = layoutInflater.inflate(R.layout.fragment_start_1, container, false)
-            1 -> view = layoutInflater.inflate(R.layout.fragment_start_2, container, false)
-            2 -> view = layoutInflater.inflate(R.layout.fragment_start_3, container, false)
-        }
-
-
+        var view = layoutInflater.inflate(R.layout.fragment_start_pager, container, false)
 
         container.addView(view)
         return view
