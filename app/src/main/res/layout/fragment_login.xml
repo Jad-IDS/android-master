@@ -34,6 +34,7 @@
 
             <com.ids.markaz.custom.CustomTextViewMedium
 
+
                     android:textSize="@dimen/big_font"
                     android:textColor="@color/white"
                     android:text="Login To Your Account"
@@ -151,6 +152,7 @@
 
 
             <LinearLayout
+                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:visibility="gone"
@@ -162,6 +164,7 @@
                     android:background="@drawable/backgroud_rectangular_blue">
 
                 <ImageView
+                        android:clickable="true"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:backgroundTint="@color/white"
